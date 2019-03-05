@@ -61,6 +61,43 @@
             cursor: pointer;
         }
         
+        .card:nth-child(4) .range-wrapper {
+            background-color: inherit;
+            border: 1px solid #a4a4a4;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 16px;
+            width: 286px;
+            height: 100%;
+        }
+
+        .box-color {
+            border: 1px solid #000;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+
+        .red-box {
+            background-color: red;
+        }
+
+        .green-box {
+            background-color: green;
+        }
+
+        .blue-box {
+            background-color: blue;
+        }
+
+        .range-color {
+            margin-bottom: 20px;
+        }
+
+        .range-item:last-child .range-color {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -71,11 +108,32 @@
 
     <div class="card">
         <h1>Play with color</h1>
-        <button id="toggle-change-color" class="toggle-cursor">Change Color</button>
+        <button id="toggle-change-color" class="toggle-cursor">Change Background Color</button>
     </div>
 
     <div class="card">
         <h1>Play with color</h1>
+    </div>
+
+    <div class="card">
+        <h1>Play with color</h1>
+
+        <div class="range-wrapper">
+            <div class="range-item">
+                <div class="box-color red-box"></div>
+                <input type="range" name="redRange" class="range-color" min="0" max="255">
+            </div>
+
+            <div class="range-item">
+                <div class="box-color green-box"></div>
+                <input type="range" name="greenRange" class="range-color" min="0" max="255">
+            </div>
+
+            <div class="range-item">
+                <div class="box-color blue-box"></div>
+                <input type="range" name="blueRange" class="range-color" min="0" max="255">
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
