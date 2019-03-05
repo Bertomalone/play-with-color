@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Exercise</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .btn-cursor {
+            border: none;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 8px 16px;
+            background-color: #43A2FF;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            outline: none;
+        }
+
+        .btn-cursor:hover {
+            border: 1px solid #43A2FF;
+            color: #43A2FF;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="title-text">Play with color</h1>
+    <button id="btn-change-color" class="btn-cursor">Change Color</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
