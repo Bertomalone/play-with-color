@@ -53,3 +53,14 @@ rangeGreen.addEventListener("input", function() {
 rangeBlue.addEventListener("input", function() {
     document.getElementsByClassName("card")[3].style.backgroundColor = cologRGB(rangeRed.value, rangeGreen.value, rangeBlue.value);
 });
+
+// change background color with point of x and y
+const oneCardBlock =  document.getElementsByClassName("card")[4];
+oneCardBlock.classList.add("card-one-block");
+oneCardBlock.addEventListener("mousemove", function(event) {
+    const xPosition = Math.round((event.clientX / window.innerWidth) * 255);
+    const yPosition = Math.round((event.clientY / window.innerHeight) * 255);
+    const fixBluePosition = Math.round(255 / 2);
+
+    oneCardBlock.style.backgroundColor = "rgb("+ xPosition +", "+ yPosition +", "+ fixBluePosition +")";
+});
